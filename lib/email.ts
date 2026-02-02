@@ -57,7 +57,7 @@ export async function sendConfirmationEmail({
 
   try {
     const info = await transporter.sendMail({
-      from: process.env.NEXT_ZOHO_EMAIL,
+      from: "Pavilion Tech <" + process.env.NEXT_ZOHO_EMAIL + ">",
       to,
       subject,
       html: htmlContent,
