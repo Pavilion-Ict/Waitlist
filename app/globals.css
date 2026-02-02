@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+@theme {
+  --background-main:url("/background-main.png");
+}
+
+@layer utilities {
+  .mask-gradient-border {
+    padding: 1px; /* This controls your border width */
+    mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+  }
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
