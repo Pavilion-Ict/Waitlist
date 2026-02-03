@@ -10,7 +10,7 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
-  title: "Pavillion Tech",
+  title: "PAVILION |All in one partner for Texh, Design and Branding",
   description: "",
 };
 
