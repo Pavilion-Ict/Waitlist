@@ -17,7 +17,7 @@ interface SendEmailParams {
 export async function sendConfirmationEmail({
   to,
   name,
-  subject = "Welcome to Pavillion Tech!",
+  subject = "Welcome to Pavilion!",
 }: SendEmailParams) {
   const htmlContent = `
     <!DOCTYPE html>
@@ -36,11 +36,11 @@ export async function sendConfirmationEmail({
       <body>
         <div class="container">
           <div class="header">
-            <h1>Welcome to Pavilion Tech!</h1>
+            <h1>Welcome to Pavilion!</h1>
           </div>
           <div class="content">
             <p>Hi <strong>${name}</strong>,</p>
-            <p>Thank you for joining our waitlist! We're excited to have you as part of the Pavillion Tech community.</p>
+            <p>Thank you for joining our waitlist! We're excited to have you as part of the Pavilion Tech community.</p>
             <p>We'll keep you updated on our latest news, products, and services. Stay tuned for exclusive offers and early access opportunities!</p>
             <p>If you have any questions, feel free to contact us anytime.</p>
             <a href="https://wa.me/c/2348188549945" class="button">Get in Touch</a>
